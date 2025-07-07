@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | IRCTC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="irctc-header-main">
+    <!-- Top Utility Bar -->
+    <div class="utility-nav">
+        <div class="container">
+            <div class="utility-content">
+                <div class="left-utility">
+                    <a href="tel:139" class="utility-link">
+                        <i class="fas fa-phone-alt"></i> 139 (Railway Enquiry)
+                    </a>
+                    <a href="help.html" class="utility-link">
+                        <i class="fas fa-question-circle"></i> Help
+                    </a>
+                </div>
+                <div class="right-utility">
+                    <div class="language-selector">
+                        <i class="fas fa-globe"></i>
+                        <select>
+                            <option>English</option>
+                            <option>हिंदी</option>
+                            <option>தமிழ்</option>
+                            <option>తెలుగు</option>
+                        </select>
+                    </div>
+                    <div class="user-actions">
+                        <a href="login.html" class="login-btn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <span class="divider">|</span>
+                        <a href="register.html" class="register-btn">
+                            <i class="fas fa-user-plus"></i> Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="primary-nav">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="index.html" class="brand-logo">
+                    <img src="images/irctc-logo.png" alt="IRCTC Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="main-logo-text">IRCTC</span>
+                        <span class="sub-logo-text">Indian Railways</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <ul class="main-menu">
+                        <li class="menu-item">
+                            <a href="index.html" class="menu-link active">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="menu-item highlight-item">
+                            <a href="book-ticket.html" class="menu-link highlight-link">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Book Ticket</span>
+                            </a>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-train"></i>
+                                <span>Train Services</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pnr-status.html" class="dropdown-item">
+                                    <i class="fas fa-search"></i>
+                                    PNR Status
+                                </a>
+                                <a href="train-schedule.html" class="dropdown-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Train Schedule
+                                </a>
+                                <a href="fare-enquiry.html" class="dropdown-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    Fare Enquiry
+                                </a>
+                                <a href="seat-availability.html" class="dropdown-item">
+                                    <i class="fas fa-chair"></i>
+                                    Seat Availability
+                                </a>
+                                <a href="cancel-ticket.html" class="dropdown-item">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cancel Ticket
+                                </a>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="my-bookings.html" class="menu-link">
+                                <i class="fas fa-clipboard-list"></i>
+                                <span>My Bookings</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="special-offers.html" class="menu-link">
+                                <i class="fas fa-gift"></i>
+                                <span>Special Offers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-menu-container">
+            <ul class="mobile-menu">
+                <li class="mobile-menu-item">
+                    <a href="index.html" class="mobile-menu-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item highlight-item">
+                    <a href="book-ticket.html" class="mobile-menu-link highlight-link">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Book Ticket</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item with-dropdown">
+                    <div class="mobile-menu-heading">
+                        <i class="fas fa-train"></i>
+                        <span>Train Services</span>
+                        <i class="fas fa-chevron-down dropdown-toggle"></i>
+                    </div>
+                    <div class="mobile-dropdown-menu">
+                        <a href="pnr-status.html" class="mobile-dropdown-item">
+                            <i class="fas fa-search"></i>
+                            PNR Status
+                        </a>
+                        <a href="train-schedule.html" class="mobile-dropdown-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            Train Schedule
+                        </a>
+                        <a href="fare-enquiry.html" class="mobile-dropdown-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            Fare Enquiry
+                        </a>
+                        <a href="seat-availability.html" class="mobile-dropdown-item">
+                            <i class="fas fa-chair"></i>
+                            Seat Availability
+                        </a>
+                        <a href="cancel-ticket.html" class="mobile-dropdown-item">
+                            <i class="fas fa-times-circle"></i>
+                            Cancel Ticket
+                        </a>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="my-bookings.html" class="mobile-menu-link">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>My Bookings</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="special-offers.html" class="mobile-menu-link">
+                        <i class="fas fa-gift"></i>
+                        <span>Special Offers</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="login.html" class="mobile-menu-link">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="register.html" class="mobile-menu-link">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-form">
+                        <h1>Login to Your Account</h1>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">Username or Email</label>
+                                <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                        <div class="login-divider">
+                            <span>or</span>
+                        </div>
+                        <div class="social-login">
+                            <button class="btn btn-social btn-google">
+                                <i class="fab fa-google"></i> Continue with Google
+                            </button>
+                            <button class="btn btn-social btn-facebook">
+                                <i class="fab fa-facebook-f"></i> Continue with Facebook
+                            </button>
+                        </div>
+                        <div class="register-link">
+                            Don't have an account? <a href="register.html">Register here</a>
+                        </div>
+                    </div>
+                    <div class="login-image">
+                        <img src="images/login-train.jpg" alt="Train Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="book-ticket.html">Book Ticket</a></li>
+                        <li><a href="cancel-ticket.html">Cancel Ticket</a></li>
+                        <li><a href="pnr-status.html">PNR Status</a></li>
+                        <li><a href="train-schedule.html">Train Schedule</a></li>
+                        <li><a href="fare-enquiry.html">Fare Enquiry</a></li>
+                        <li><a href="seat-availability.html">Seat Availability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About IRCTC</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Other Services</h3>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Booking</a></li>
+                        <li><a href="#">Retiring Rooms</a></li>
+                        <li><a href="#">Catering Services</a></li>
+                        <li><a href="#">Railwire WiFi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Download App</h3>
+                    <div class="app-download">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>GET IT ON<br><strong>Google Play</strong></span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>Download on the<br><strong>App Store</strong></span>
+                        </a>
+                    </div>
+                    
+                    <h3 class="connect-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <span>Payment Methods:</span>
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/rupay.png" alt="Rupay">
+                    <img src="images/upi.png" alt="UPI">
+                    <img src="images/netbanking.png" alt="Net Banking">
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2025 IRCTC - Indian Railway Catering and Tourism Corporation. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC - Indian Railway Catering and Tourism Corporation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="irctc-header-main">
+        <!-- Top Utility Bar -->
+        <div class="utility-nav">
+            <div class="container">
+                <div class="utility-content">
+                    <div class="left-utility">
+                        <a href="tel:139" class="utility-link">
+                            <i class="fas fa-phone-alt"></i> 139 (Railway Enquiry)
+                        </a>
+                        <a href="help.html" class="utility-link">
+                            <i class="fas fa-question-circle"></i> Help
+                        </a>
+                    </div>
+                    <div class="right-utility">
+                        <div class="language-selector">
+                            <i class="fas fa-globe"></i>
+                            <select>
+                                <option>English</option>
+                                <option>हिंदी</option>
+                                <option>தமிழ்</option>
+                                <option>తెలుగు</option>
+                            </select>
+                        </div>
+                        <div class="user-actions">
+                            <a href="login.html" class="login-btn">
+                                <i class="fas fa-user"></i> Login
+                            </a>
+                            <span class="divider">|</span>
+                            <a href="register.html" class="register-btn">
+                                <i class="fas fa-user-plus"></i> Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Main Navigation -->
+        <nav class="primary-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <!-- Logo -->
+                    <a href="index.html" class="brand-logo">
+                        <img src="images/irctc-logo.png" alt="IRCTC Logo" class="logo-img">
+                        <div class="logo-text">
+                            <span class="main-logo-text">IRCTC</span>
+                            <span class="sub-logo-text">Indian Railways</span>
+                        </div>
+                    </a>
+    
+                    <!-- Desktop Navigation -->
+                    <div class="desktop-nav">
+                        <ul class="main-menu">
+                            <li class="menu-item">
+                                <a href="index.html" class="menu-link active">
+                                    <i class="fas fa-home"></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="menu-item highlight-item">
+                                <a href="book-ticket.html" class="menu-link highlight-link">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <span>Book Ticket</span>
+                                </a>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#" class="menu-link">
+                                    <i class="fas fa-train"></i>
+                                    <span>Train Services</span>
+                                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="pnr-status.html" class="dropdown-item">
+                                        <i class="fas fa-search"></i>
+                                        PNR Status
+                                    </a>
+                                    <a href="train-schedule.html" class="dropdown-item">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Train Schedule
+                                    </a>
+                                    <a href="fare-enquiry.html" class="dropdown-item">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        Fare Enquiry
+                                    </a>
+                                    <a href="seat-availability.html" class="dropdown-item">
+                                        <i class="fas fa-chair"></i>
+                                        Seat Availability
+                                    </a>
+                                    <a href="cancel-ticket.html" class="dropdown-item">
+                                        <i class="fas fa-times-circle"></i>
+                                        Cancel Ticket
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="my-bookings.html" class="menu-link">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>My Bookings</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="special-offers.html" class="menu-link">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Special Offers</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <div class="mobile-menu-container">
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-item">
+                        <a href="index.html" class="mobile-menu-link active">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item highlight-item">
+                        <a href="book-ticket.html" class="mobile-menu-link highlight-link">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Book Ticket</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item with-dropdown">
+                        <div class="mobile-menu-heading">
+                            <i class="fas fa-train"></i>
+                            <span>Train Services</span>
+                            <i class="fas fa-chevron-down dropdown-toggle"></i>
+                        </div>
+                        <div class="mobile-dropdown-menu">
+                            <a href="pnr-status.html" class="mobile-dropdown-item">
+                                <i class="fas fa-search"></i>
+                                PNR Status
+                            </a>
+                            <a href="train-schedule.html" class="mobile-dropdown-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                Train Schedule
+                            </a>
+                            <a href="fare-enquiry.html" class="mobile-dropdown-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                Fare Enquiry
+                            </a>
+                            <a href="seat-availability.html" class="mobile-dropdown-item">
+                                <i class="fas fa-chair"></i>
+                                Seat Availability
+                            </a>
+                            <a href="cancel-ticket.html" class="mobile-dropdown-item">
+                                <i class="fas fa-times-circle"></i>
+                                Cancel Ticket
+                            </a>
+                        </div>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="my-bookings.html" class="mobile-menu-link">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>My Bookings</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="special-offers.html" class="mobile-menu-link">
+                            <i class="fas fa-gift"></i>
+                            <span>Special Offers</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="login.html" class="mobile-menu-link">
+                            <i class="fas fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="register.html" class="mobile-menu-link">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Register</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Booking Form -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>India's Largest Railway Booking Platform</h1>
+                    <p>Book train tickets, check PNR status, and explore railway services with ease</p>
+                    
+                    <div class="booking-card">
+                        <div class="booking-tabs">
+                            <button class="tab-btn active" data-tab="train">Train Tickets</button>
+                            <button class="tab-btn" data-tab="tour">Tour Packages</button>
+                        </div>
+                        
+                        <form id="quickBookingForm" class="active">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fromStation">From</label>
+                                    <input type="text" id="fromStation" placeholder="Enter departure station">
+                                </div>
+                                <div class="form-group">
+                                    <label for="toStation">To</label>
+                                    <input type="text" id="toStation" placeholder="Enter arrival station">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="journeyDate">Journey Date</label>
+                                    <input type="date" id="journeyDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="journeyClass">Class</label>
+                                    <select id="journeyClass">
+                                        <option value="">All Classes</option>
+                                        <option value="1A">First AC</option>
+                                        <option value="2A">Second AC</option>
+                                        <option value="3A">Third AC</option>
+                                        <option value="SL">Sleeper</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Search Trains</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="quick-services">
+            <div class="container">
+                <h2 class="section-title">Quick Services</h2>
+                <div class="services-grid">
+                    <a href="pnr-status.html" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>PNR Status</h3>
+                        <p>Check your booking confirmation status</p>
+                    </a>
+                    
+                    <a href="train-schedule.html" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h3>Train Schedule</h3>
+                        <p>Find train routes and timings</p>
+                    </a>
+                    
+                    <a href="seat-availability.html" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h3>Seat Availability</h3>
+                        <p>Check available seats on trains</p>
+                    </a>
+                    
+                    <a href="fare-enquiry.html" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3>Fare Enquiry</h3>
+                        <p>Check ticket prices between stations</p>
+                    </a>
+                    
+                    <a href="cancel-ticket.html" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <h3>Cancel Ticket</h3>
+                        <p>Cancel your booked tickets</p>
+                    </a>
+                    
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Trains Section -->
+        <section class="popular-trains">
+            <div class="container">
+                <h2 class="section-title">Popular Trains</h2>
+                <div class="trains-slider">
+                    <div class="train-card">
+                        <div class="train-header">
+                            <span class="train-number">12309</span>
+                            <span class="train-name">Rajdhani Express</span>
+                        </div>
+                        <div class="train-route">
+                            <span>Delhi (NDLS)</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Mumbai (CSTM)</span>
+                        </div>
+                        <div class="train-timing">
+                            <div>
+                                <span class="time">16:35</span>
+                                <span class="day">Day 1</span>
+                            </div>
+                            <div class="duration">15h 40m</div>
+                            <div>
+                                <span class="time">08:15</span>
+                                <span class="day">Day 2</span>
+                            </div>
+                        </div>
+                        <div class="train-classes">
+                            <span class="class-badge">1A</span>
+                            <span class="class-badge">2A</span>
+                            <span class="class-badge">3A</span>
+                        </div>
+                        <a href="book-ticket.html" class="btn btn-outline btn-block">Book Now</a>
+                    </div>
+                    
+                    <div class="train-card">
+                        <div class="train-header">
+                            <span class="train-number">12010</span>
+                            <span class="train-name">Shatabdi Express</span>
+                        </div>
+                        <div class="train-route">
+                            <span>Bangalore (SBC)</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Chennai (MAS)</span>
+                        </div>
+                        <div class="train-timing">
+                            <div>
+                                <span class="time">06:00</span>
+                                <span class="day">Day 1</span>
+                            </div>
+                            <div class="duration">5h 00m</div>
+                            <div>
+                                <span class="time">11:00</span>
+                                <span class="day">Day 1</span>
+                            </div>
+                        </div>
+                        <div class="train-classes">
+                            <span class="class-badge">CC</span>
+                            <span class="class-badge">2S</span>
+                        </div>
+                        <a href="book-ticket.html" class="btn btn-outline btn-block">Book Now</a>
+                    </div>
+                    
+                    <div class="train-card">
+                        <div class="train-header">
+                            <span class="train-number">12302</span>
+                            <span class="train-name">Duronto Express</span>
+                        </div>
+                        <div class="train-route">
+                            <span>Howrah (HWH)</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span>New Delhi (NDLS)</span>
+                        </div>
+                        <div class="train-timing">
+                            <div>
+                                <span class="time">22:50</span>
+                                <span class="day">Day 1</span>
+                            </div>
+                            <div class="duration">16h 30m</div>
+                            <div>
+                                <span class="time">15:20</span>
+                                <span class="day">Day 2</span>
+                            </div>
+                        </div>
+                        <div class="train-classes">
+                            <span class="class-badge">1A</span>
+                            <span class="class-badge">2A</span>
+                            <span class="class-badge">3A</span>
+                        </div>
+                        <a href="book-ticket.html" class="btn btn-outline btn-block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="home-offers">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Special Offers</h2>
+                    <a href="special-offers.html" class="view-all">View All</a>
+                </div>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-badge">15% OFF</div>
+                        
+                        <div class="offer-content">
+                            <h3>Weekend Special Discount</h3>
+                            <p>Get flat 15% off on all weekend train bookings</p>
+                            <div class="offer-meta">
+                                <span class="validity">Valid till: 31 Dec 2023</span>
+                                <span class="code">Use code: WEEKEND15</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-badge">₹100 OFF</div>
+                        
+                        <div class="offer-content">
+                            <h3>First Time User Offer</h3>
+                            <p>New users get ₹100 off on their first booking</p>
+                            <div class="offer-meta">
+                                <span class="validity">For first booking only</span>
+                                <span class="code">Use code: WELCOME100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-badge">10% OFF</div>
+                       
+                        <div class="offer-content">
+                            <h3>Group Booking Discount</h3>
+                            <p>Book for 4 or more passengers and get 10% discount</p>
+                            <div class="offer-meta">
+                                <span class="validity">Valid till: 31 Mar 2024</span>
+                                <span class="code">Auto-applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Book With Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Booking</h3>
+                        <p>Your personal and payment information is always protected with our advanced security measures.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Confirmation</h3>
+                        <p>Get your ticket confirmed instantly with e-ticket delivery to your email and mobile.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Customer Support</h3>
+                        <p>Our customer care team is available round the clock to assist you with any queries.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3>No Hidden Charges</h3>
+                        <p>What you see is what you pay - no surprises at the payment page.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Book tickets on the go with our mobile-friendly website and app.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>Best Discounts</h3>
+                        <p>Enjoy exclusive discounts and cashback offers on train bookings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Updates Section -->
+        <section class="news-section">
+            <div class="container">
+                <h2 class="section-title">News & Updates</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="images/news1.jpg" alt="New Trains">
+                        <div class="news-content">
+                            <span class="news-date">15 Nov 2023</span>
+                            <h3>10 New Trains Added to Indian Railways Network</h3>
+                            <p>Indian Railways has introduced 10 new trains connecting major cities across the country to improve connectivity.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <img src="images/news2.jpg" alt="Summer Special">
+                        <div class="news-content">
+                            <span class="news-date">10 Nov 2023</span>
+                            <h3>Summer Special Trains Announced</h3>
+                            <p>Book your summer vacation tickets early as Railways announces 150 summer special trains for 2024.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <img src="images/news3.jpg" alt="Safety Measures">
+                        <div class="news-content">
+                            <span class="news-date">05 Nov 2023</span>
+                            <h3>Enhanced Safety Measures Implemented</h3>
+                            <p>Indian Railways has implemented new safety measures across all major stations and trains.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="book-ticket.html">Book Ticket</a></li>
+                        <li><a href="cancel-ticket.html">Cancel Ticket</a></li>
+                        <li><a href="pnr-status.html">PNR Status</a></li>
+                        <li><a href="train-schedule.html">Train Schedule</a></li>
+                        <li><a href="fare-enquiry.html">Fare Enquiry</a></li>
+                        <li><a href="seat-availability.html">Seat Availability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About IRCTC</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Other Services</h3>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Booking</a></li>
+                        <li><a href="#">Retiring Rooms</a></li>
+                        <li><a href="#">Catering Services</a></li>
+                        <li><a href="#">Railwire WiFi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Download App</h3>
+                    <div class="app-download">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>GET IT ON<br><strong>Google Play</strong></span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>Download on the<br><strong>App Store</strong></span>
+                        </a>
+                    </div>
+                    
+                    <h3 class="connect-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <span>Payment Methods:</span>
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/rupay.png" alt="Rupay">
+                    <img src="images/upi.png" alt="UPI">
+                    <img src="images/netbanking.png" alt="Net Banking">
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2025 IRCTC - Indian Railway Catering and Tourism Corporation. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
